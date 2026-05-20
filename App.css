@@ -1,0 +1,123 @@
+.app {
+  width: min(720px, calc(100% - 32px));
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 12px;
+  color: #f8fafc;
+  font-size: 2.5rem;
+}
+
+.intro p {
+  margin: 0;
+  color: #b6c2cf;
+  font-size: 1.1rem;
+}
+
+.card,
+.output {
+  padding: 24px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #111827;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+textarea {
+  width: 100%;
+  min-height: 130px;
+  resize: vertical;
+  border: 1px solid #475569;
+  border-radius: 6px;
+  padding: 14px;
+  color: #f8fafc;
+  background: #020617;
+  font: inherit;
+}
+
+textarea::placeholder {
+  color: #7d8ca1;
+}
+
+textarea:focus {
+  border-color: #38bdf8;
+  outline: 3px solid rgba(56, 189, 248, 0.2);
+}
+
+.button-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 16px;
+  color: #020617;
+  background: #38bdf8;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #7dd3fc;
+}
+
+.secondary-button {
+  color: #e2e8f0;
+  background: #334155;
+}
+
+.secondary-button:hover {
+  background: #475569;
+}
+
+.output {
+  margin-top: 20px;
+}
+
+.output h2 {
+  margin: 0 0 12px;
+  color: #f8fafc;
+  font-size: 1.4rem;
+}
+
+.output p {
+  margin: 0;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+@media (max-width: 560px) {
+  .app {
+    justify-content: flex-start;
+    padding: 32px 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .button-row {
+    flex-direction: column;
+  }
+}
